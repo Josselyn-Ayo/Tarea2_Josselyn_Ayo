@@ -23,8 +23,16 @@ public class Main {
         public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Jugador jugador1 = new Jugador("Lionel Messi","delantero",37,10);
-        Jugador jugador2 = new Jugador("Pedri Gonzalez","Centrocampista",22,8);
-            System.out.println("Ingrese el nombre del tercer jugador: ");
+            System.out.println("Ingrese el nombre del segundo jugador: ");
+            String nombre2 = input.nextLine();
+            System.out.println("Ingrese la  posicion del segundo jugador: ");
+            String posicion2 = input.nextLine();
+            System.out.println("Ingrese la edad del segundo jugador: ");
+            int edad2 = input.nextInt();
+            System.out.println("Ingrese el numero del segundo jugador ");
+            int numeroCamiseta2 = input.nextInt();
+            Jugador jugador2 = new Jugador(nombre2, posicion2, edad2, numeroCamiseta2);
+        /*    System.out.println("Ingrese el nombre del tercer jugador: ");
             String nombre3 = input.nextLine();
             System.out.println("Ingrese la  posicion del tercer jugador: ");
             String posicion3 = input.nextLine();
@@ -32,10 +40,10 @@ public class Main {
             int edad3 = input.nextInt();
             System.out.println("Ingrese el numero del tercer jugador ");
             int numeroCamiseta3 = input.nextInt();
-            Jugador jugador3 = new Jugador(nombre3,posicion3,edad3,numeroCamiseta3);
+            Jugador jugador3 = new Jugador( nombre3, posicion3, edad3, numeroCamiseta3);*/
             jugador1.informacion();
             jugador2.informacion();
-            jugador3.informacion();
+            //jugador3.informacion();
 
     }
 
