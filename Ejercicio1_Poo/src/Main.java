@@ -32,18 +32,10 @@ public class Main {
             System.out.println("Ingrese el numero del segundo jugador ");
             int numeroCamiseta2 = input.nextInt();
             Jugador jugador2 = new Jugador(nombre2, posicion2, edad2, numeroCamiseta2);
-        /*    System.out.println("Ingrese el nombre del tercer jugador: ");
-            String nombre3 = input.nextLine();
-            System.out.println("Ingrese la  posicion del tercer jugador: ");
-            String posicion3 = input.nextLine();
-            System.out.println("Ingrese la edad del tercer jugador: ");
-            int edad3 = input.nextInt();
-            System.out.println("Ingrese el numero del tercer jugador ");
-            int numeroCamiseta3 = input.nextInt();
-            Jugador jugador3 = new Jugador( nombre3, posicion3, edad3, numeroCamiseta3);*/
+            Jugador jugador3 = new Jugador("Pedri Gonzales", "centrocampista", 22,8);
             jugador1.informacion();
             jugador2.informacion();
-            //jugador3.informacion();
+            jugador3.informacion();
 
     }
 
